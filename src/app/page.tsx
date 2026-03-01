@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { getPublishedPosts } from "@/lib/notion";
 
+export const dynamic = 'force-dynamic';
+
 const MOCK_POSTS = [
   {
     id: "1",

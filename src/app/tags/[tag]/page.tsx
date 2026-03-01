@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPublishedPosts } from "@/lib/notion";
 
+export const dynamic = 'force-dynamic';
+
 const MOCK_POSTS = [
   {
     id: "1",

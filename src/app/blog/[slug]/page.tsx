@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { getPostBySlug, getAllSlugs } from "@/lib/notion";
+
+export const dynamic = 'force-dynamic';
 import { LikeButton } from "@/components/LikeButton";
 import { CommentSection } from "@/components/CommentSection";
 

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPublishedPosts } from "@/lib/notion";
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60;
 
 const MOCK_POSTS = [
   {

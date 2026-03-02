@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getPublishedPosts } from "@/lib/notion";
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60; // ISR: revalidate every 60 seconds
 
 const MOCK_POSTS = [
   {
